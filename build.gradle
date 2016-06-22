@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    compile 'javax.persistence:persistence-api:+'
     compile 'org.springframework:spring-context:+'
     testCompile 'junit:junit:+'
 }

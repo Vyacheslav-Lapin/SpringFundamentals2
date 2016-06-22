@@ -17,7 +17,7 @@ public class ServiceImpl {
     }
 
     public static void main(String[] args) {
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-config.xml");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("application-context.xml");
 
         ServiceImpl service = ctx.getBean("myService", ServiceImpl.class);
 
