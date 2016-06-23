@@ -12,5 +12,13 @@ repositories {
 dependencies {
     compile 'javax.persistence:persistence-api:+'
     compile 'org.springframework:spring-context:+'
+
+
+
+    testCompile 'org.springframework:spring-test:+'
     testCompile 'junit:junit:+'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.14'
 }
