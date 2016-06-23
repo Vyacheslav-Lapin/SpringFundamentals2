@@ -34,14 +34,17 @@ public class UsualPerson implements Person {
         this.height = height;
     }
 
+    @Override
     public void setName(String name) {
         this.name = name;
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
+    @Override
     public void sayHello(Person person) {
     }
 

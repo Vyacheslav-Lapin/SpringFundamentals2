@@ -3,7 +3,6 @@ import org.junit.*;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 import lab.model.UsualPerson;
 import lab.model.Person;
@@ -19,7 +18,8 @@ public class HelloWorldTest {
 
 	@Before
 	public void setUp() throws Exception {
-		context = new ClassPathXmlApplicationContext(APPLICATION_CONTEXT_XML_FILE_NAME);
+		context = new ClassPathXmlApplicationContext(
+				new String[] { APPLICATION_CONTEXT_XML_FILE_NAME });
 		expectedPerson = getExpectedPerson();
 	}
 
