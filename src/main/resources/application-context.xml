@@ -13,7 +13,7 @@
           p:name="John Smith"
           p:age="35"
           p:height="1.78"
-          p:isProgrammer="true"
+          p:programmer="true"
           p:country-ref="country">
         <property name="contacts">
             <list>

@@ -35,7 +35,7 @@ public class SimpleAppTest {
 		UsualPerson person = new UsualPerson();
 		person.setAge(35);
 		person.setHeight(1.78F);
-		person.setIsProgrammer(true);
+		person.setProgrammer(true);
 		person.setName("John Smith");
 
 		Country country = new Country();

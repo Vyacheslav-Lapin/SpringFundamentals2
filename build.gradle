@@ -12,8 +12,9 @@ repositories {
 dependencies {
     compile 'javax.persistence:persistence-api:+'
     compile 'org.springframework:spring-context:+'
+    compile 'ch.qos.logback:logback-classic:+'
 
-
+    compileOnly 'org.projectlombok:lombok:+'
 
     testCompile 'org.springframework:spring-test:+'
     testCompile 'junit:junit:+'
