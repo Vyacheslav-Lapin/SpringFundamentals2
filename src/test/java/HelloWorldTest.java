@@ -1,12 +1,13 @@
-import static org.junit.Assert.* ;
-import org.junit.*;
-
+import lab.model.Country;
+import lab.model.Person;
+import lab.model.UsualPerson;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import lab.model.UsualPerson;
-import lab.model.Person;
-import lab.model.Country;
+import static org.junit.Assert.assertEquals;
 
 public class HelloWorldTest {
 

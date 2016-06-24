@@ -1,14 +1,14 @@
-import static org.junit.Assert.*;
-
-import org.junit.*;
+import lab.model.Country;
+import lab.model.UsualPerson;
+import org.junit.Before;
+import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import lab.model.UsualPerson;
-import lab.model.Country;
-
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 public class SimpleAppTest {
 	
