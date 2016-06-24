@@ -13,6 +13,8 @@ dependencies {
     compile 'javax.persistence:persistence-api:+'
     compile 'org.springframework:spring-context:+'
     compile 'ch.qos.logback:logback-classic:+'
+    compile 'org.aspectj:aspectjweaver:+'
+    compile 'org.aspectj:aspectjrt:+'
 
     compileOnly 'org.projectlombok:lombok:+'
 
