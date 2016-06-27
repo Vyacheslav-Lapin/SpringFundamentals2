@@ -15,6 +15,7 @@ dependencies {
     compile 'ch.qos.logback:logback-classic:+'
     compile 'org.aspectj:aspectjweaver:+'
     compile 'org.aspectj:aspectjrt:+'
+    compile 'org.hsqldb:hsqldb:+'
 
     compileOnly 'org.projectlombok:lombok:+'
 
