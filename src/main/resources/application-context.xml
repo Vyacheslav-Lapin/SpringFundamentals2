@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:aop="http://www.springframework.org/schema/aop"
-       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="
 	    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
@@ -21,7 +21,25 @@
         </bean>
      -->
 
-    <bean id="countryDao" class="lab.dao.CountryDao">
-        <property name="dataSource" ref="dataSource"/>
+    <bean id="countryDao" class="lab.dao.CountryDao" p:dataSource-ref="dataSource"/>
+
+    <bean id="countryInitData" class="java.util.LinkedHashMap">
+        <constructor-arg name="m">
+            <map>
+                <entry key="AU" value="Australia"/>
+                <entry key="RU" value="Russia"/>
+                <entry key="CA" value="Canada"/>
+                <entry key="FR" value="France"/>
+                <entry key="HK" value="Hong Kong"/>
+                <entry key="IC" value="Iceland"/>
+                <entry key="JP" value="Japan"/>
+                <entry key="SE" value="Sweden"/>
+                <entry key="CH" value="Switzerland"/>
+                <entry key="GB" value="United Kingdom"/>
+                <entry key="US" value="United States"/>
+            </map>
+        </constructor-arg>
     </bean>
+
+
 </beans>
