@@ -17,6 +17,8 @@ dependencies {
     compile 'org.aspectj:aspectjweaver:+'
     compile 'org.aspectj:aspectjrt:+'
     compile 'org.hsqldb:hsqldb:+'
+    compile 'org.hibernate:hibernate-core:+'
+    compile 'org.hibernate:hibernate-entitymanager:+'
 
     compileOnly 'org.projectlombok:lombok:+'
 
