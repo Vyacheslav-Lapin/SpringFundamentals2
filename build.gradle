@@ -10,14 +10,14 @@ repositories {
 }
 
 dependencies {
-    compile 'javax.persistence:persistence-api:+'
+//    compile 'javax.persistence:persistence-api:+'
     compile 'org.springframework:spring-context:+'
     compile 'org.springframework:spring-jdbc:+'
     compile 'ch.qos.logback:logback-classic:+'
     compile 'org.aspectj:aspectjweaver:+'
     compile 'org.aspectj:aspectjrt:+'
     compile 'org.hsqldb:hsqldb:+'
-    compile 'org.hibernate:hibernate-core:+'
+//    compile 'org.hibernate:hibernate-core:+'
     compile 'org.hibernate:hibernate-entitymanager:+'
 
     compileOnly 'org.projectlombok:lombok:+'
