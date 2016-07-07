@@ -2,6 +2,7 @@ group 'com.epam.javalab.spring'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'war'
 
 sourceCompatibility = 1.8
 
@@ -10,18 +11,19 @@ repositories {
 }
 
 dependencies {
-//    compile 'javax.persistence:persistence-api:+'
-    compile 'org.springframework:spring-context:+'
+    compile 'org.springframework:spring-webmvc:+'
+    compile 'org.hibernate:hibernate-entitymanager:+'
     compile 'org.springframework:spring-jdbc:+'
+    compile 'org.springframework:spring-jpa:+'
     compile 'ch.qos.logback:logback-classic:+'
     compile 'org.aspectj:aspectjweaver:+'
     compile 'org.aspectj:aspectjrt:+'
+    compile 'com.mchange:c3p0:+'
+    compile 'org.hibernate:hibernate-validator:+'
+    compile 'javax.validation:validation-api:+'
+
     compile 'org.hsqldb:hsqldb:+'
-//    compile 'org.hibernate:hibernate-core:+'
-    compile 'org.hibernate:hibernate-entitymanager:+'
-
     compileOnly 'org.projectlombok:lombok:+'
-
     testCompile 'org.springframework:spring-test:+'
     testCompile 'junit:junit:+'
 }
